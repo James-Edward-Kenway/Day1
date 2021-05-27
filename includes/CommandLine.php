@@ -1,6 +1,8 @@
 <?php
 
-
+/**
+ * Class to control the CommandLine
+ */
 class CommandLine {
 
     /**

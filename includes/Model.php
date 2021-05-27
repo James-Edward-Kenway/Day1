@@ -50,6 +50,11 @@ class Model
         return $item;
     }
 
+    /**
+     * Save the item with attributes
+     *
+     * @return void
+     */
     public function save($attributes = []) {
 
         foreach ($attributes as $key => $value) {
@@ -59,11 +64,21 @@ class Model
         $this->saveItemToFile();
     }
 
+    /**
+     * Delete the current data from file
+     *
+     * @return void
+     */
     public function delete() {
 
         $this->deleteItemToFile();
     }
 
+    /**
+     * Save the current item to data.json
+     *
+     * @return self
+     */
     public function saveItemToFile () {
 
         // decode the data
@@ -98,6 +113,11 @@ class Model
         return $this;
     }
 
+    /**
+     * get all items from data.json
+     *
+     * @return array
+     */
     public static function all () {
 
         $obj = new (get_called_class())();
@@ -118,6 +138,11 @@ class Model
         return $list;
     }
 
+    /**
+     * Delete the current data from file
+     *
+     * @return self
+     */
     public function deleteItemToFile () {
 
         // decode the data
@@ -144,6 +169,12 @@ class Model
         return $this;
     }
 
+    /**
+     * Get the attribute of the model
+     *
+     * @param string $name
+     * @return mixed
+     */
     public function __get($name)
     {
         if (@$this->{$name} == null) {
