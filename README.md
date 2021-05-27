@@ -1,4 +1,4 @@
-This Buy event app
+This is a Buy event app
 
 to run this PHP app, you need to run `php -f app.php` in the folder where app.php is located!
 
