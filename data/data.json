@@ -1,0 +1,13 @@
+{
+    "orders": [
+        { "id": 1, "client_id": 1, "price": 5000, "product": "Product 1" },
+        { "id": 2, "client_id": 1, "price": 8000, "product": "Product 1" },
+        { "id": 3, "client_id": 2, "price": 55000, "product": "Product 1" },
+        { "id": 4, "client_id": 3, "price": 15000, "product": "Product 1" }
+    ],
+    "clients": [
+        { "id": 1, "phone": "+9989385545", "email": "email1@gmail.com" },
+        { "id": 2, "phone": "+9989385545", "email": "email1@gmail.com" },
+        { "id": 3, "phone": "+9989385545", "email": "email1@gmail.com" }
+    ]
+}
